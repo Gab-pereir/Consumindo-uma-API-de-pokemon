@@ -14,44 +14,11 @@
     <link rel="stylesheet" href="css/plugins.css">
 
     <title>Consumindo uma API de Pokemon</title>
+    
 </head>
 <body>
 
-    <div class="tag blue">
-        <div class="icon">
-            <img src="img/bag-red.svg" alt="">
-        </div>
-        <span>pokedex</span>
-    </div>
-    <div class="tag">
-        <div class="icon">
-            <img src="img/bag-red.svg" alt="">
-        </div>
-        <span>pokedex</span>
-    </div>
-
-    <div class="search">
-        <input type="text" placeholder="Search name or code">
-        <button type="button">
-            <img src="img/icon-search.svg" alt="">
-        </button>
-    </div>
-
-    <button class="type-filter ghost">
-        <div class="icon">
-            <img src="img/icon-types/ghost.svg" alt="">
-        </div>
-        <span>ghost</span>
-    </button>
-
-    <button class="type-filter">
-        <div class="icon">
-            <img src="img/icon-types/ghost.svg" alt="">
-        </div>
-        <span>ghost</span>
-    </button>
-
-    <button class="card-pokemon">
+    <button class="card-pokemon js-open-details-pokemon grass">
         <div class="image">
             <img src="img/bulbasaur.svg" alt="">
         </div>
@@ -66,6 +33,140 @@
 
         </div>
     </button>
+
+    <div class="modal" type-pokemon-modal="grass">
+        <div class="overlay">
+            <div class="box">
+                <buttton class="close js-close-modal-details">
+                    <img src="img/close.svg" alt="">
+                </buttton>
+                <div class="left-container">
+                    <div class="icon">
+                        <img src="img/icon-types/grass.svg" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="img/bulbasaur.svg" alt="">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="name">
+                        <h2>Bulbasaur</h2>
+                        <span>#001</span>
+                    </div>
+                    <ul class="type">
+                        <li>
+                            <span class="tag-type grass">Grass</span>
+                        </li>
+                        <li>
+                            <span class="tag-type poison">Poison</span>
+                        </li>
+                    </ul>
+                    <ul class="info">
+                        <li>
+                            <span>Height</span>
+                            <strong>0.7m</strong>
+                        </li>
+                        <li>
+                            <span>Weight</span>
+                            <strong>6.9kg</strong>
+                        </li>
+                        <li>
+                            <span>Abilities</span>
+                            <strong>Overgrow</strong>
+                        </li>
+                    </ul>
+                    <div class="weaknesses">
+                        <h4>Weaknesses</h4>
+                        <ul>
+                            <li>
+                                <span class="tag-type fire">Fire</span>
+                                <span class="tag-type psychic">Psychic</span>
+                                <span class="tag-type flying">Flying</span>
+                                <span class="tag-type ice">Ice</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="stats">
+                        <h5>Stats</h5>
+                        <div class="all">
+                            <div class="item">
+                                <span>HP</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Attack</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Deefense</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Sp. Attack</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Sp. Defense</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span>Speed</span>
+                                <div class="bar-status">
+                                    <div class="bar"></div>
+                                    <ul class="separator">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div class="container">
