@@ -6,6 +6,7 @@ header{
     height: 11.2rem;
     display: flex;
     align-items: center;
+    z-index: 2;
     .container{
         display: flex;
         align-items: center;
@@ -16,6 +17,12 @@ header{
             font-weight: 400;
             line-height: 15.73px;
             color: #FFFFFF;
+        }
+    }
+    @media (max-width:560px){
+        height: 8.2rem;
+        img{
+            max-width: 12.8rem;
         }
     }
 }

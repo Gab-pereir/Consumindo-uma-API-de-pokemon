@@ -922,6 +922,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 2;
 }
 header .container {
   display: -webkit-box;
@@ -940,6 +941,14 @@ header .container p {
   font-weight: 400;
   line-height: 15.73px;
   color: #FFFFFF;
+}
+@media (max-width: 560px) {
+  header {
+    height: 8.2rem;
+  }
+  header img {
+    max-width: 12.8rem;
+  }
 }
 
 .s-area-slide-hero {
