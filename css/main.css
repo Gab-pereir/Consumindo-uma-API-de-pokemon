@@ -961,9 +961,6 @@ header .container p {
   height: 100%;
   overflow: hidden;
 }
-.s-area-slide-hero .slide-hero .swiper-slide {
-  position: relative;
-}
 .s-area-slide-hero .slide-hero .swiper-slide.blue .main-area {
   background-image: url("../img/bg-blue.svg");
 }
@@ -1016,6 +1013,7 @@ header .container p {
 .s-area-slide-hero .slide-hero .swiper-slide .main-area .text .image {
   position: relative;
   z-index: 1;
+  margin-top: 20rem;
   width: 100%;
   max-width: 79.8rem;
   margin: 0 auto;
@@ -1146,6 +1144,7 @@ header .container p {
 }
 
 .s-all-info-pokemons {
+  display: none;
   position: relative;
   padding-top: 19.9rem;
   margin-top: -28.8rem;
@@ -1218,6 +1217,7 @@ header .container p {
 }
 
 footer {
+  display: none;
   width: 100%;
   background-color: #3F5DB3;
   padding-top: 6.7rem;
