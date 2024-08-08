@@ -1,5 +1,4 @@
 footer{
-    display: none;
     width: 100%;
     background-color: #3F5DB3;
     padding-top: 6.7rem;
@@ -8,16 +7,33 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .text{
-            h3{
-                color: #fff;
-            }
-            p{
-                font-size: 1.4rem;
-                font-weight: 500;
-                line-height: 25.2px;
-                color: rgba(255, 255, 255, 0.8);
-            }
+    }
+    .text{
+        h3{
+            color: #fff;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 25.2px;
+            color: rgba(255, 255, 255, 0.8);
         }
     }
+    @media(max-width: 560px) {
+        padding: 4rem 0;
+        .container {
+          flex-direction: column;
+        }
+        .text {
+          margin-bottom: 4.8rem;
+          h3 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
 }
+
+    
