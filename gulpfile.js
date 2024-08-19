@@ -44,7 +44,7 @@ gulp.task('alljs', gulpJs);
 
 function pluginsJs() {
   return gulp
-  .src(['./js/lib/axios.min.js', './js/lib/swiper.min.js', './js/lib/axios.min.js'])
+  .src(['./js/lib/axios.min.js', './js/lib/swiper.min.js',])
   .pipe(concat('plugins.js'))
   .pipe(gulp.dest('js/'))
   .pipe(browserSync.stream())
