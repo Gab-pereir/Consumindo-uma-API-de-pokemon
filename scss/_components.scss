@@ -464,7 +464,7 @@
     }
   }
 
-  .modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -476,7 +476,7 @@
     z-index: 2022;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all .3s;
     &[type-pokemon-modal="fire"] {
       .box {
         .left-container {
@@ -615,17 +615,15 @@
     .box {
       position: relative;
       width: 100%;
-      top: 20%;
       max-width: 71rem;
       height: 50.8rem;
       background-color: #ffffff;
       z-index: 1;
       box-shadow: 0px 10px 40px rgba(13, 12, 71, 0.05);
-      border-radius: 16px; 
+      border-radius: 16px;  
       display: flex;
-      margin: 0 auto;
-      transform: none;
-      transition: transform 0.3s ease-in;
+      transform: translateY(4rem);
+      transition: transform .3s ease-in;
       .close {
         position: absolute;
         top: -4.4rem;
@@ -634,7 +632,7 @@
         height: 3.6rem;
         background: #FFFFFF;
         border-radius: 8px;
-        @include centerTotalFlex;
+        @include centerTotalFlex();
       }
       .left-container {
         position: relative;
@@ -726,7 +724,7 @@
             }
           }
         }
-        .weaknesses {
+        .weak {
           margin-bottom: 1rem;
           h4 {
             font-weight: 600;
@@ -892,10 +890,13 @@
       }
     }
   }
-
+  
 .open-modal {
     .modal {
       opacity: 1;
-      pointer-events: auto;
+      pointer-events: all;
+      .box {
+        transform: translateY(0);
+      }
     }
   }

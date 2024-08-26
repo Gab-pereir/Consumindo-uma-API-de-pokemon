@@ -558,7 +558,6 @@ button {
 .modal .box {
   position: relative;
   width: 100%;
-  top: 20%;
   max-width: 71rem;
   height: 50.8rem;
   background-color: #ffffff;
@@ -569,9 +568,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  -webkit-transform: none;
-  transform: none;
+  -webkit-transform: translateY(4rem);
+  transform: translateY(4rem);
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
@@ -703,10 +701,10 @@ button {
   letter-spacing: -0.01em;
   color: #2F3133;
 }
-.modal .box .right-container .weaknesses {
+.modal .box .right-container .weak {
   margin-bottom: 1rem;
 }
-.modal .box .right-container .weaknesses h4 {
+.modal .box .right-container .weak h4 {
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -714,7 +712,7 @@ button {
   color: #4D5053;
   margin-bottom: 1.6rem;
 }
-.modal .box .right-container .weaknesses ul {
+.modal .box .right-container .weak ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,10 +723,10 @@ button {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.modal .box .right-container .weaknesses ul li {
+.modal .box .right-container .weak ul li {
   margin-bottom: 1rem;
 }
-.modal .box .right-container .weaknesses ul li:not(:last-child) {
+.modal .box .right-container .weak ul li:not(:last-child) {
   margin-right: 1rem;
 }
 .modal .box .right-container .stats h5 {
@@ -882,7 +880,11 @@ button {
 
 .open-modal .modal {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
+}
+.open-modal .modal .box {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 h1, h2, h3 {
